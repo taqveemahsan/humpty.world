@@ -43,7 +43,7 @@ function NavBar() {
           <li><Link to="/" className={`${(useLocation().pathname) == '/' ? 'active' : ''}`}>Home</Link></li>
           {/* <li><Link to="/">Eggs-perience Now</Link></li>
           <li><Link to="/">Crack-Up</Link></li> */}
-          <li><a href="/#series" className={`${(useLocation().pathname) == '/#series' ? 'active' : ''}`}>Watch </a></li>
+          <li><a href="/#creations" className={`${(useLocation().pathname) == '/#creations' ? 'active' : ''}`}>Watch </a></li>
           <li><a href="https://app.humpty.world" target="_blank"  >DApp</a></li>
 
           {/* <li><Link to="/">Token</Link></li> */}
@@ -77,7 +77,7 @@ function NavBar() {
             <li><Link to="/" className={`${(useLocation().pathname) == '/' ? 'active' : ''}`} onClick={handlehide}>Home</Link></li>
           {/* <li><Link to="/">Eggs-perience Now</Link></li>
           <li><Link to="/">Crack-Up</Link></li> */}
-          <li><a href="/#series" className={`${(useLocation().pathname) == '/#series' ? 'active' : ''}`} onClick={handlehide}>Watch </a></li>
+          <li><a href="/#creations" className={`${(useLocation().pathname) == '/#creations' ? 'active' : ''}`} onClick={handlehide}>Watch </a></li>
           <li><a  href="https://app.humpty.world" target="_blank"  >DApp</a></li>
           </ul> 
          

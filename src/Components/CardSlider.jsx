@@ -15,19 +15,22 @@ function CardSlider() {
             id: 1,
             image: Post1,
             title: "Humpty <br /> Vlog",
-            className: "orange active"
+            className: "orange",
+            comingSoon: true
         },
         {
             id: 2,
             image: Post2,
             title: "Learn <br />with Humpty",
-            className: "blue active"
+            className: "blue active",
+            link: "https://www.youtube.com/@HumptyAI"
         },
         {
             id: 3,
             image: Post3,
             title: "Humpty<br /> Series",
-            className: "red active"
+            className: "red",
+            comingSoon: true
         },
        
     ];
@@ -95,14 +98,28 @@ function CardSlider() {
             <Slider {...settings}>
                 {slides.map((slide) => (
                     <div className="px-2" key={slide.id}>
-                        <Link to="/" className={`card-post ${slide.className}`}>
-                            <Image src={slide.image} alt="Post" />
-                            <h3 dangerouslySetInnerHTML={{ __html: slide.title }} />
-                        </Link>
+                        {slide.link ? (
+                            <a
+                                href={slide.link}
+                                target="_blank"
+                                rel="noreferrer"
+                                className={`card-post ${slide.className}`}
+                            >
+                                <Image src={slide.image} alt="Post" />
+                                <h3 dangerouslySetInnerHTML={{ __html: slide.title }} />
+                            </a>
+                        ) : (
+                            <div className={`card-post ${slide.className} coming-soon`}>
+                                <Image src={slide.image} alt="Post" />
+                                <h3 dangerouslySetInnerHTML={{ __html: slide.title }} />
+                                <span className="coming-label">Coming Soon</span>
+                            </div>
+                        )
                     </div>
-                ))}
+                ))
             </Slider>
         </>
     );
 }
 export default CardSlider;
+

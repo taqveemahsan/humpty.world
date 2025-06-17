@@ -69,21 +69,23 @@ function Home() {
     }
 
     const creations = [
-        { img: ocImg1, gif: ocGif1, large: true },
-        { img: ocImg2, gif: ocGif2 },
-        { img: ocImg3, gif: ocGif3 },
-        { img: ocImg4, gif: ocGif4 },
-        { img: ocImg5, gif: ocGif5 },
-        { img: ocImg6, gif: ocGif6 },
-        { img: ocImg7, gif: ocGif7 },
-        { img: ocImg8, gif: ocGif8 },
-        { img: ocImg9, gif: ocGif9 },
-        { img: ocImg10, gif: ocGif10 },
-        { img: ocImg11, gif: ocGif11 },
-        { img: ocImg12, gif: ocGif12 }
+        { img: ocImg1, gif: ocGif1, large: true, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg2, gif: ocGif2, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg3, gif: ocGif3, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg4, gif: ocGif4, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg5, gif: ocGif5, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg6, gif: ocGif6, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg7, gif: ocGif7, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg8, gif: ocGif8, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg9, gif: ocGif9, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg10, gif: ocGif10, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg11, gif: ocGif11, url: 'https://www.youtube.com/@HumptyAI' },
+        { img: ocImg12, gif: ocGif12, url: 'https://www.youtube.com/@HumptyAI' }
     ];
 
-    const handleCardClick = () => setShowVideo(true);
+    const handleCardClick = (url) => {
+        window.open(url, '_blank');
+    };
     const handleCloseModal = () => setShowVideo(false);
 
     useEffect(() => {
@@ -113,15 +115,30 @@ function Home() {
                             <h2 className='ai-that-title'>AI THAT</h2>
                             <h3 className='ai-that-subtitle'>SPEAKS, SEES, AND CREATES.</h3>
                             <div className='social-icons'>
-                                <div className='social-icon'>
+                                <a
+                                    href='https://app.humpty.world/'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className='social-icon'
+                                >
                                     <Image src={groupIcon} alt='Group Icon' />
-                                </div>
-                                <div className='social-icon'>
+                                </a>
+                                <a
+                                    href='https://app.humpty.world/'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className='social-icon'
+                                >
                                     <Image src={aiVideoGenIcon} alt='AI Video Generator Icon' />
-                                </div>
-                                <div className='social-icon'>
+                                </a>
+                                <a
+                                    href='https://app.humpty.world/'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className='social-icon'
+                                >
                                     <Image src={group1Icon} alt='Group 1 Icon' />
-                                </div>
+                                </a>
                             </div>
                         </Col>
                     </Row>
@@ -152,7 +169,7 @@ function Home() {
             </Modal>
 
                         {/* Our Creations Section */}
-                        <Container fluid className='our-creations-section'>
+                        <Container fluid id='creations' className='our-creations-section'>
                 <Container>
                     <Row>
                         <Col xl="12" lg="12" md="12" sm="12" className='scroll-anime top'>
@@ -164,11 +181,14 @@ function Home() {
                                         className={`creation-item ${item.large ? 'large' : ''}`}
                                         onMouseEnter={() => setHoveredIndex(index)}
                                         onMouseLeave={() => setHoveredIndex(null)}
-                                        onClick={handleCardClick}
+                                        onClick={() => handleCardClick(item.url)}
                                     >
                                         <img src={hoveredIndex === index ? item.gif : item.img} alt={`Creation ${index + 1}`} loading='lazy' />
                                     </div>
                                 ))}
+                            </div>
+                            <div className='btn-pnl py-4 text-center'>
+                                <div className='reg-btn red' onClick={() => window.open('https://www.youtube.com/@HumptyAI', '_blank')}>Watch on YouTube<span className='fa fa-play' /></div>
                             </div>
                         </Col>
                     </Row>
