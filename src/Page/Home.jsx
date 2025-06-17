@@ -83,7 +83,9 @@ function Home() {
         { img: ocImg12, gif: ocGif12 }
     ];
 
-    const handleCardClick = () => setShowVideo(true);
+    const handleCardClick = () => {
+        window.open('https://www.youtube.com/@HumptyAI', '_blank');
+    };
     const handleCloseModal = () => setShowVideo(false);
 
     useEffect(() => {
