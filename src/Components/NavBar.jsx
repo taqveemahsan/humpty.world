@@ -41,8 +41,8 @@ function NavBar() {
           <li><Link to="/" className={`${(useLocation().pathname) == '/' ? 'active' : ''}`}>Home</Link></li>
           {/* <li><Link to="/">Eggs-perience Now</Link></li>
           <li><Link to="/">Crack-Up</Link></li> */}
-          <li><a href="/#series" className={`${(useLocation().pathname) == '/#series' ? 'active' : ''}`}>Watch Series</a></li>
-          <li><Link to="https://app.humpty.world" >DApp</Link></li>
+          <li><a href="https://www.youtube.com/@humptytok" target="_blank" rel="noopener noreferrer">Watch</a></li>
+          <li><a href="https://app.humpty.world/" target="_blank" rel="noopener noreferrer">DApp</a></li>
 
           {/* <li><Link to="/">Token</Link></li> */}
           {/* <li><Link to="#">Roadmap</Link></li> */}
@@ -67,8 +67,8 @@ function NavBar() {
           <li><Link to="/" className={`${(useLocation().pathname) == '/' ? 'active' : ''}`}>Home</Link></li>
           {/* <li><Link to="/">Eggs-perience Now</Link></li>
           <li><Link to="/">Crack-Up</Link></li> */}
-          <li><a href="/#series" className={`${(useLocation().pathname) == '/#series' ? 'active' : ''}`}>Watch Series</a></li>
-          <li><Link to="https://app.humpty.world" >DApp</Link></li>
+          <li><a href="https://www.youtube.com/@humptytok" target="_blank" rel="noopener noreferrer">Watch</a></li>
+          <li><a href="https://app.humpty.world/" target="_blank" rel="noopener noreferrer">DApp</a></li>
 
           </ul>
           {/* <ul className="nav-link-list">
