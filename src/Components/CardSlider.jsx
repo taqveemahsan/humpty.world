@@ -114,9 +114,9 @@ function CardSlider() {
                                 <h3 dangerouslySetInnerHTML={{ __html: slide.title }} />
                                 <span className="coming-label">Coming Soon</span>
                             </div>
-                        )
+                        )}
                     </div>
-                ))
+                ))}
             </Slider>
         </>
     );

@@ -69,18 +69,18 @@ function Home() {
     }
 
     const creations = [
-        { img: ocImg1, gif: ocGif1, large: true, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg2, gif: ocGif2, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg3, gif: ocGif3, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg4, gif: ocGif4, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg5, gif: ocGif5, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg6, gif: ocGif6, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg7, gif: ocGif7, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg8, gif: ocGif8, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg9, gif: ocGif9, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg10, gif: ocGif10, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg11, gif: ocGif11, url: 'https://www.youtube.com/@HumptyAI' },
-        { img: ocImg12, gif: ocGif12, url: 'https://www.youtube.com/@HumptyAI' }
+        { img: ocImg1, gif: ocGif1, large: true, url: 'https://www.youtube.com/watch?v=nBfbZZF4r4c&ab_channel=HumptyAIWorld' },
+        { img: ocImg2, gif: ocGif2, url: 'https://www.youtube.com/watch?v=wkDCtY-yUrM&ab_channel=HumptyAIWorld' },
+        { img: ocImg3, gif: ocGif3, url: 'https://www.youtube.com/watch?v=mKQRt-oHhSc&ab_channel=HumptyAIWorld' },
+        { img: ocImg4, gif: ocGif4, url: 'https://www.youtube.com/watch?v=mKQRt-oHhSc&ab_channel=HumptyAIWorld' },
+        { img: ocImg5, gif: ocGif5, url: 'https://www.youtube.com/watch?v=PnQ0pR7Qi2I' },
+        { img: ocImg6, gif: ocGif6, url: 'https://www.youtube.com/watch?v=sFNQ5Z9yasE&ab_channel=HumptyAIWorld' },
+        { img: ocImg7, gif: ocGif7, url: 'https://www.youtube.com/watch?v=sFNQ5Z9yasE&ab_channel=HumptyAIWorld' },
+        { img: ocImg8, gif: ocGif8, url: 'https://www.youtube.com/watch?v=_3Tars7RCvU&ab_channel=HumptyAIWorld' },
+        { img: ocImg9, gif: ocGif9, url: 'https://www.youtube.com/watch?v=_3Tars7RCvU&ab_channel=HumptyAIWorld' },
+        { img: ocImg10, gif: ocGif10, url: 'https://www.youtube.com/watch?v=wkDCtY-yUrM&ab_channel=HumptyAIWorld' },
+        { img: ocImg11, gif: ocGif11, url: 'https://www.youtube.com/watch?v=RWFrfy_2uoU&ab_channel=HumptyAIWorld' },
+        { img: ocImg12, gif: ocGif12, url: 'https://www.youtube.com/watch?v=wkDCtY-yUrM&ab_channel=HumptyAIWorld' }
     ];
 
     const handleCardClick = (url) => {
@@ -188,7 +188,7 @@ function Home() {
                                 ))}
                             </div>
                             <div className='btn-pnl py-4 text-center'>
-                                <div className='reg-btn red' onClick={() => window.open('https://www.youtube.com/@HumptyAI', '_blank')}>Watch on YouTube<span className='fa fa-play' /></div>
+                                <div className='reg-btn red' onClick={() => window.open('https://www.youtube.com/@HumptyAI', '_blank')}>Watch More<span className='fa fa-play' /></div>
                             </div>
                         </Col>
                     </Row>
