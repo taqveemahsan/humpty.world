@@ -5,6 +5,9 @@ import orangediamond from "../Images/Bg/diamond.svg";
 import yellowsun from "../Images/Bg/sun-yellow.svg";
 import humptyasrtronot from "../Images/Posts/Humpty-astronot.png";
 import aithatBg from "../Images/Bg/Aithat.gif";
+import groupIcon from "../Images/Icons/Group.svg";
+import aiVideoGenIcon from "../Images/Icons/ai_video_generator.svg";
+import group1Icon from "../Images/Icons/Group-1.svg";
 import { Link } from 'react-router-dom';
 import PostSlider from '../Components/PostSlider';
 import { FriendshipMarquee, TextMarquee } from '../Components/Marquee';
@@ -66,14 +69,14 @@ function Home() {
                             <h2 className='ai-that-title'>AI THAT</h2>
                             <h3 className='ai-that-subtitle'>SPEAKS, SEES, AND CREATES.</h3>
                             <div className='social-icons'>
-                                <div className='social-icon discord'>
-                                    <i className='fab fa-discord'></i>
+                                <div className='social-icon'>
+                                    <Image src={groupIcon} alt='Group Icon' />
                                 </div>
-                                <div className='social-icon twitter'>
-                                    <i className='fab fa-twitter'></i>
+                                <div className='social-icon'>
+                                    <Image src={aiVideoGenIcon} alt='AI Video Generator Icon' />
                                 </div>
-                                <div className='social-icon telegram'>
-                                    <i className='fab fa-telegram'></i>
+                                <div className='social-icon'>
+                                    <Image src={group1Icon} alt='Group 1 Icon' />
                                 </div>
                             </div>
                         </Col>
