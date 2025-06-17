@@ -115,15 +115,30 @@ function Home() {
                             <h2 className='ai-that-title'>AI THAT</h2>
                             <h3 className='ai-that-subtitle'>SPEAKS, SEES, AND CREATES.</h3>
                             <div className='social-icons'>
-                                <div className='social-icon'>
+                                <a
+                                    href='https://app.humpty.world/'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className='social-icon'
+                                >
                                     <Image src={groupIcon} alt='Group Icon' />
-                                </div>
-                                <div className='social-icon'>
+                                </a>
+                                <a
+                                    href='https://app.humpty.world/'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className='social-icon'
+                                >
                                     <Image src={aiVideoGenIcon} alt='AI Video Generator Icon' />
-                                </div>
-                                <div className='social-icon'>
+                                </a>
+                                <a
+                                    href='https://app.humpty.world/'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className='social-icon'
+                                >
                                     <Image src={group1Icon} alt='Group 1 Icon' />
-                                </div>
+                                </a>
                             </div>
                         </Col>
                     </Row>
