@@ -570,3 +570,17 @@
         }
     }
 }
+
+.iframe-modal {
+    .modal-dialog {
+        max-width: 800px;
+    }
+    .modal-content {
+        background: transparent;
+        border: none;
+    }
+    .close-btn {
+        display: block;
+        margin: 10px auto 20px;
+    }
+}

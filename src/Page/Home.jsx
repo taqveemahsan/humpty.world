@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Modal, Button } from "react-bootstrap";
 import Header from '../Components/Header';
 import orangediamond from "../Images/Bg/diamond.svg";
 import yellowsun from "../Images/Bg/sun-yellow.svg";
@@ -42,6 +42,7 @@ import ocGif12 from "../Images/OurCreations/Gif 12.gif";
 function Home() {
     const [animatedElements, setAnimatedElements] = useState([]);
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [showVideo, setShowVideo] = useState(false);
 
     // Function to check if an element is in the viewport
     function isElementInViewport(elem) {
@@ -81,6 +82,9 @@ function Home() {
         { img: ocImg11, gif: ocGif11 },
         { img: ocImg12, gif: ocGif12 }
     ];
+
+    const handleCardClick = () => setShowVideo(true);
+    const handleCloseModal = () => setShowVideo(false);
 
     useEffect(() => {
         // Initial check on page load
@@ -124,6 +128,29 @@ function Home() {
                 </Container>
             </Container>
 
+            <Modal
+                show={showVideo}
+                onHide={handleCloseModal}
+                centered
+                size="lg"
+                className="iframe-modal"
+            >
+                <Modal.Body className="p-0">
+                    <div className="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.youtube.com/embed/sFNQ5Z9yasE?si=VeJNaZ_E85Wqw4bI"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        />
+                    </div>
+                </Modal.Body>
+                <Button variant="secondary" className="close-btn" onClick={handleCloseModal}>
+                    Close
+                </Button>
+            </Modal>
+
                         {/* Our Creations Section */}
                         <Container fluid className='our-creations-section'>
                 <Container>
@@ -137,6 +164,7 @@ function Home() {
                                         className={`creation-item ${item.large ? 'large' : ''}`}
                                         onMouseEnter={() => setHoveredIndex(index)}
                                         onMouseLeave={() => setHoveredIndex(null)}
+                                        onClick={handleCardClick}
                                     >
                                         <img src={hoveredIndex === index ? item.gif : item.img} alt={`Creation ${index + 1}`} loading='lazy' />
                                     </div>
