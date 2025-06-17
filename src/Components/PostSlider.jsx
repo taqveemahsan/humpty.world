@@ -1,17 +1,6 @@
 
 import React from "react";
 import { Image } from "react-bootstrap";
-import Post1 from "../Images/Posts/Post-1.jpg";
-import Post2 from "../Images/Posts/Post-2.jpg";
-import Post3 from "../Images/Posts/Post-3.jpg";
-import Post4 from "../Images/Posts/Post-4.jpg";
-import Post5 from "../Images/Posts/Post-5.jpg";
-import Postsmall1 from "../Images/Posts/small-post-1.png";
-import Postsmall2 from "../Images/Posts/small-post-2.png";
-import Humpty from "../Images/Posts/Humpty.png";
-import Postsmall3 from "../Images/Posts/small-post-3.png";
-import Postsmall4 from "../Images/Posts/small-post-4.png";
-import Postsmall5 from "../Images/Posts/small-post-5.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -116,7 +105,7 @@ function PostSlider() {
             <Slider {...settings}>
              {posts.map((post) => (
                    <div className="px-2">
-                   <Link to="/" className="general-post active red-post" style={{ backgroundColor: post.bg }}>
+                   <a  href="https://app.humpty.world" target="_blank"  className="general-post active red-post" style={{ backgroundColor: post.bg }}>
                        <Image src={post.img} alt="Post" />
                    
                        <div className="info-pnl justify-center !left-[0]  !right-[0]">
@@ -126,7 +115,7 @@ function PostSlider() {
                              <h6>{post.heading}
                              </h6>
                        </div>
-                   </Link>
+                   </a>
                </div>
              ))}
             </Slider >

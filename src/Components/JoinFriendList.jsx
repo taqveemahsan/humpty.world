@@ -8,7 +8,10 @@ import Post4 from "../Images/Posts/NewHumpty.png";
 import Post5 from "../Images/Posts/Humpty-astronot.png";
 import icontelegram from "../Images/Icons/icon-telegram.svg";
 import iconx from "../Images/Icons/iconX.svg";
-import iconeagle from "../Images/Icons/icon-eagle.svg";
+import linktree from "../Images/Posts/Linktree.png";
+import insta from "../Images/Posts/insta.svg";
+import facebook from "../Images/Posts/facebook.svg";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
@@ -25,9 +28,13 @@ function JoinFriendList() {
     return (
         <>
             <ul className="Join-list">
-                <span><Link target="_blank" to="/"><Image src={iconx} alt="Social Icon" /></Link></span>
-                <span><Link target="_blank" to="/"><Image src={iconeagle} alt="Social Icon" /></Link></span>
-                <span><Link target="_blank" to="/"><Image src={icontelegram} alt="Social Icon" /></Link></span>
+               <span><Link target="_blank" to="https://www.instagram.com/humptyai_official/"><Image src={insta} alt="Social Icon" /></Link></span>
+                <span><Link target="_blank" to="https://x.com/HumptyAi"><Image src={iconx} alt="Social Icon" /></Link></span>
+                <span><Link target="_blank" to="https://linktr.ee/humptyai"><Image src={linktree} alt="Social Icon" /></Link></span>
+                <span><Link target="_blank" to="https://t.me/humptyai"><Image src={icontelegram} alt="Social Icon" /></Link></span>
+                <span><Link target="_blank" to="https://www.facebook.com/people/Humpty-AI/pfbid0fQbAYL3maqJ7vrXEanMSBxjL9oodxgtZFeKqHtRdggE4mzSMJ6poyvhAS11NVeAkl"><Image src={facebook} alt="Social Icon" /></Link></span>
+
+                
                 <li className={activeIndex === 0 ? "active" : ""}>
                     <Image src={Post1} alt="Post" />
                 </li>

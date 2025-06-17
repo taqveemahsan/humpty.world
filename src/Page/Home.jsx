@@ -180,10 +180,10 @@ function Home() {
             {/* <Container fluid className='ready-talk-section'>
                 <Container>
                     <Row>
-                        <Col xl="12" lg="12" md="12" sm="12" className='text-center scroll-anime top' id='series'>
+                        <Col xl="12" lg="12" md="12" sm="12" className='text-center scroll-anime top' >
                             <h2>Start Your AI Journey with <br /> Humpty Today!</h2>
                             <div className='btn-pnl'>
-                                <Link className='reg-btn red text-uppercase' to="/">Let's go <span className='fa fa-arrow-right' /></Link>
+                                <a className='reg-btn red text-uppercase'  href="https://app.humpty.world" target="_blank" >Let's go <span className='fa fa-arrow-right' /></a>
                             </div>
                         </Col>
                     </Row>
@@ -293,9 +293,9 @@ function Home() {
                  <Container fluid className='the-humpty-dumpty-pnl'>
                 <div className='scroll-anime top'>
                     <Col xl="12" className='text-center scroll-anime top'>
-                        <h4>The hum(py) Dump</h4>
+                        <h4 id='series'>The hum(py) Pump</h4>
                         <div className='spacer-30' />
-                        <span className='red-span' to="/">Tokens</span>
+                        <span className='red-span' to="/">Watch</span>
                     </Col>
                     <div className='card-slider-container scroll-anime left'>
                         <CardSlider />
