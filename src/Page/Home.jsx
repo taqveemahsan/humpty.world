@@ -57,22 +57,22 @@ function Home() {
             <Header />
             {/* Header Ends Here */}
 
-            {/* Hero Content Section */}
-            <Container fluid className='hero-content-section'>
+            {/* AI That Section */}
+            <Container fluid className='ai-that-section'>
                 <Container>
                     <Row>
                         <Col xl="12" lg="12" md="12" sm="12" className='text-center scroll-anime top'>
-                            <div className='hero-content'>
-                                <h2 className='hero-title'>Meet Humpty AI</h2>
-                                <p className='hero-subtitle'>The AI-powered cartoon character creating web series, vlogs, and giving you the same creative tools</p>
-                                <div className='hero-features'>
-                                    <div className='feature-tag'>Text-to-Speech</div>
-                                    <div className='feature-tag'>Dubbing</div>
-                                    <div className='feature-tag'>Voice Cloning</div>
-                                    <div className='feature-tag'>Talking Avatars</div>
+                            <h2 className='ai-that-title'>AI THAT</h2>
+                            <h3 className='ai-that-subtitle'>SPEAKS, SEES, AND CREATES.</h3>
+                            <div className='social-icons'>
+                                <div className='social-icon discord'>
+                                    <i className='fab fa-discord'></i>
                                 </div>
-                                <div className='btn-pnl'>
-                                    <Link className='reg-btn red text-uppercase' to="https://app.humpty.world">Try Humpty AI <span className='fa fa-arrow-right' /></Link>
+                                <div className='social-icon twitter'>
+                                    <i className='fab fa-twitter'></i>
+                                </div>
+                                <div className='social-icon telegram'>
+                                    <i className='fab fa-telegram'></i>
                                 </div>
                             </div>
                         </Col>
@@ -80,93 +80,97 @@ function Home() {
                 </Container>
             </Container>
 
-            {/* AI Features Section */}
-            <Container fluid className='ai-features-section'>
+            {/* Our Creations Section */}
+            <Container fluid className='our-creations-section'>
                 <Container>
                     <Row>
-                        <Col xl="12" lg="12" md="12" sm="12" className='text-center scroll-anime top' id='series'>
-                            <h2>AI-Powered Creative Tools</h2>
-                            <p className='section-subtitle'>Everything you need to create amazing content with AI</p>
+                        <Col xl="12" lg="12" md="12" sm="12" className='scroll-anime top'>
+                            <h4 className='section-title'>Our Creations</h4>
+                            <div className='creations-grid'>
+                                <div className='creation-item large'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" alt="Creation 1" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 2" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 3" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 4" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 5" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 6" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 7" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 8" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 9" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 10" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 11" />
+                                </div>
+                                <div className='creation-item'>
+                                    <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Creation 12" />
+                                </div>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
-                <div className='features-slider scroll-anime right'>
-                    <PostSlider />
+            </Container>
+
+            {/* Astronaut Coming Soon Section */}
+            <Container fluid className='astronaut-section'>
+                <div className='astronaut-content scroll-anime top'>
+                    <div className='astronaut-character'>
+                        <div className='speech-bubble left'>
+                            <span>MY SPACESHIP IS LANDING SOON, AND I CAN'T WAIT TO CRACK OPEN A CHAT WITH YOU!</span>
+                        </div>
+                        <div className='astronaut-img'>
+                            <Image src={humptyasrtronot} alt="Humpty Astronaut" />
+                        </div>
+                        <div className='speech-bubble right'>
+                            <span>Coming in hot from space!</span>
+                        </div>
+                    </div>
                 </div>
             </Container>
 
-            {/* Video Showcase Section */}
-            <Container fluid className='video-showcase-section'>
-                <Container>
-                    <Row>
-                        <Col xl="12" lg="12" md="12" sm="12" className='text-center scroll-anime top'>
-                            <h2 className='section-title'>Watch Humptyverse</h2>
-                            <p className='section-subtitle'>Experience the world of Humpty AI through our original series</p>
-                        </Col>
-                    </Row>
-                    <Row className='video-container'>
-                        <Col xl="12" lg="12" md="12" sm="12">
-                            <VideoSection />
-                        </Col>
-                    </Row>
-                </Container>
-            </Container>
-
-            {/* Characters Section */}
-            <Container fluid className='characters-section'>
-                <Container>
-                    <Row>
-                        <Col xl="12" lg="12" md="12" sm="12" className='text-center scroll-anime top'>
-                            <h2>Meet the Characters</h2>
-                            <p className='section-subtitle'>Discover Humpty's different personalities and adventures</p>
-                        </Col>
-                    </Row>
-                </Container>
-                <div className='characters-slider scroll-anime left'>
-                    <CardSlider />
+            {/* Join The Friendship Marquee */}
+            <Container fluid className='friendship-marquee-section'>
+                <div className='scroll-anime right'>
+                    <FriendshipMarquee />
                 </div>
             </Container>
 
-            {/* About Section */}
-            <Container fluid className='about-section'>
-                <span className="yellow-sun scroll-anime" style={{ backgroundImage: `url(${yellowsun})` }} />
-                <span className="orange-diamond scroll-anime" style={{ backgroundImage: `url(${orangediamond})` }} />
+            {/* Join Your Humpty Friends Section */}
+            <Container fluid className='join-friends-section'>
                 <TextMarquee />
                 <Container>
                     <Row>
                         <Col xl="12" lg="12" className='scroll-anime top'>
                             <JoinFriendList />
                         </Col>
-                        <Col xl="12" lg="12" md="12" sm="12" className='about-content text-center scroll-anime top'>
-                            <h2>What is Humpty AI?</h2>
+                        <Col xl="12" lg="12" md="12" sm="12" className='join-friends-content text-center scroll-anime top'>
+                            <h2>Join Your Humpty Friends</h2>
                             <div className='spacer-30' />
-                            <h3 className='about-description'>Humpty AI is an AI-powered cartoon character that creates its own web series and vlogs — and gives the same creative tools to users. With features like text-to-speech, dubbing, talking avatars, and prompt-to-video, anyone can bring their ideas to life. Humpty AI is where entertainment meets creation.</h3>
+                            <h5 className='fw-semibold text-capitalize'>Ready for the egg-straordinary squad?</h5>
+                            <div className='spacer-20' />
+                            <h3 className='fw-semibold'>Join your Humpty Friends — they're cracking jokes, dropping memes, and about to make your day egg-zactly what it needed!</h3>
                             <div className='spacer-50' />
-                            <div className='cta-buttons'>
-                                <Link className='reg-btn red' to="https://app.humpty.world">Start Creating <span className='fa fa-arrow-right' /></Link>
-                                <Link className='reg-btn white' to="/#series">Watch Series <span className='fa fa-play' /></Link>
-                            </div>
                         </Col>
                     </Row>
                 </Container>
-            </Container>
-
-            {/* Coming Soon Section */}
-            <Container fluid className='coming-soon-section'>
-                <div className='coming-soon-content scroll-anime top'>
-                    <Col xl={{ span: 6, offset: 3 }} lg={{ span: 8, offset: 2 }} md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }} xs={{ span: 12 }} className='text-center'>
-                        <div className='astronot-animation'>
-                            <span>My spaceship is landing soon, and I can't wait to crack open a chat with you!</span>
-                            <div className='img-pnl'>
-                                <Image src={humptyasrtronot} alt="Humpty Astronaut" />
-                            </div>
-                            <span>Coming in hot from space!</span>
-                        </div>
-                    </Col>
-                </div>
-                <div className='scroll-anime right'>
-                    <FriendshipMarquee />
-                </div>
             </Container>
         </>
     );
