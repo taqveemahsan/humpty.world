@@ -12,7 +12,9 @@ function NavBar() {
   const handleToggle = () => {
     setIsOpen((prev) => !prev);
   };
-
+  const handlehide = () => {
+    setIsOpen(false);
+  };
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -41,8 +43,8 @@ function NavBar() {
           <li><Link to="/" className={`${(useLocation().pathname) == '/' ? 'active' : ''}`}>Home</Link></li>
           {/* <li><Link to="/">Eggs-perience Now</Link></li>
           <li><Link to="/">Crack-Up</Link></li> */}
-          <li><a href="https://www.youtube.com/@humptytok" target="_blank" rel="noopener noreferrer">Watch</a></li>
-          <li><a href="https://app.humpty.world/" target="_blank" rel="noopener noreferrer">DApp</a></li>
+          <li><a href="/#series" className={`${(useLocation().pathname) == '/#series' ? 'active' : ''}`}>Watch </a></li>
+          <li><a href="https://app.humpty.world" target="_blank"  >DApp</a></li>
 
           {/* <li><Link to="/">Token</Link></li> */}
           {/* <li><Link to="#">Roadmap</Link></li> */}
@@ -63,20 +65,22 @@ function NavBar() {
         </div>
         <hr />
         <div className="nav-mid">
-          <ul className="navbar-list">
+          {/* <ul className="navbar-list">
           <li><Link to="/" className={`${(useLocation().pathname) == '/' ? 'active' : ''}`}>Home</Link></li>
           {/* <li><Link to="/">Eggs-perience Now</Link></li>
           <li><Link to="/">Crack-Up</Link></li> */}
-          <li><a href="https://www.youtube.com/@humptytok" target="_blank" rel="noopener noreferrer">Watch</a></li>
-          <li><a href="https://app.humpty.world/" target="_blank" rel="noopener noreferrer">DApp</a></li>
+          {/* <li><a href="/#series" className={`${(useLocation().pathname) == '/#series' ? 'active' : ''}`}>Watch Series</a></li>
+          <li><Link to="https://app.humpty.world" >DApp</Link></li>
 
-          </ul>
-          {/* <ul className="nav-link-list">
-            <li><Link to="/">Story & Characters</Link></li>
-            <li><Link to="/">Family Guide</Link></li>
-            <li><Link to="/">Support</Link></li>
-          </ul> */}
-        
+          </ul> */} 
+            <ul className="nav-link-list">
+            <li><Link to="/" className={`${(useLocation().pathname) == '/' ? 'active' : ''}`} onClick={handlehide}>Home</Link></li>
+          {/* <li><Link to="/">Eggs-perience Now</Link></li>
+          <li><Link to="/">Crack-Up</Link></li> */}
+          <li><a href="/#series" className={`${(useLocation().pathname) == '/#series' ? 'active' : ''}`} onClick={handlehide}>Watch </a></li>
+          <li><a  href="https://app.humpty.world" target="_blank"  >DApp</a></li>
+          </ul> 
+         
         </div>
       </div>
     </>
