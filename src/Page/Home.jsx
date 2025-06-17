@@ -4,6 +4,7 @@ import Header from '../Components/Header';
 import orangediamond from "../Images/Bg/diamond.svg";
 import yellowsun from "../Images/Bg/sun-yellow.svg";
 import humptyasrtronot from "../Images/Posts/Humpty-astronot.png";
+import aithatBg from "../Images/Bg/Aithat.gif";
 import { Link } from 'react-router-dom';
 import PostSlider from '../Components/PostSlider';
 import { FriendshipMarquee, TextMarquee } from '../Components/Marquee';
@@ -58,6 +59,7 @@ function Home() {
 
             {/* AI That Section */}
             <Container fluid className='ai-that-section'>
+                <div className="bg-layer" style={{ backgroundImage: `url(${aithatBg})` }} />
                 <Container>
                     <Row>
                         <Col xl="12" lg="12" md="12" sm="12" className='text-center scroll-anime top'>

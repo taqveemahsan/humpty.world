@@ -12,10 +12,16 @@
 // Ready Talk Panel
 
 // AI That Section
+
 .ai-that-section {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    position: relative;
+    overflow: hidden;
+
+    > .bg-layer {
+        z-index: -1;
+    }
     
     @media(max-width:991px) {
         padding-top: 40px;
