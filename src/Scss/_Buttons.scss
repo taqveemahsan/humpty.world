@@ -1,0 +1,80 @@
+.reg-btn{
+    display: inline-flex;justify-content: space-between;align-items: center;border-radius: 30px;background-color: $blue;color: $dark;
+    padding: 10px 10px 10px 20px;gap: 15px;font-weight: 500;font-size: 24px;width: auto;
+
+    span{
+        display: inline-flex;justify-content: center;align-items: center;width: 35px;height: 35px;
+        border-radius: 50%;background-color: $white;color: $dark;font-size: 18px;font-weight: 300;
+    }
+
+    &.sky-blue{background-color: $skyblue;color: $white;
+        span{color: $dark;}
+
+        &:hover{background-color: $color;color: $white;
+            span{color: $dark;}
+        }
+    }
+    &.red{background-color: $color;color: $white;
+        span{color: $color;}
+
+        &:hover{background-color: $color;color: $white;
+            span{color: $dark;}
+        }
+    }
+    &.white{background-color: $white;color: $dark;text-transform: uppercase;
+        span{background-color: $dark;color: $white;}
+        &:hover{background-color: $color;color: $white;
+            span{background-color: $white;color: $color;}
+        }
+    }
+    &.dark{background-color: $dark;color: $white;text-transform: uppercase;
+        span{background-color: $white;color: $dark;}
+        &:hover{background-color: $color;color: $white;
+            span{background-color: $white;color: $color;}
+        }
+    }
+}
+.red-span{
+    display: inline-block;border-radius: 30px;background-color: $blue;color: $dark;
+    padding: 12px 10px;font-weight: 500;font-size: 24px;width: auto;
+    text-align: center;min-width: 200px;
+    background-color: $color;color: $white;
+    text-transform: uppercase;
+
+}
+.reg-btn2{
+    display: inline-flex;justify-content: space-between;align-items: center;border-radius: 30px;background-color: $blue;color: $dark;
+    padding: 10px 20px 10px 20px;gap: 15px;font-weight: 500;font-size: 24px;width: auto;
+
+    span{
+        display: inline-flex;justify-content: center;align-items: center;width: 35px;height: 35px;
+        border-radius: 50%;background-color: $white;color: $dark;font-size: 18px;font-weight: 300;
+    }
+
+    &.sky-blue{background-color: $skyblue;color: $white;
+        span{color: $dark;}
+
+        &:hover{background-color: $color;color: $white;
+            span{color: $dark;}
+        }
+    }
+    &.red{background-color: $color;color: $white;
+        span{color: $color;}
+
+        &:hover{background-color: $color;color: $white;
+            span{color: $dark;}
+        }
+    }
+    &.white{background-color: $white;color: $dark;text-transform: uppercase;
+        span{background-color: $dark;color: $white;}
+        &:hover{background-color: $color;color: $white;
+            span{background-color: $white;color: $color;}
+        }
+    }
+    &.dark{background-color: $dark;color: $white;text-transform: uppercase;
+        span{background-color: $white;color: $dark;}
+        &:hover{background-color: $color;color: $white;
+            span{background-color: $white;color: $color;}
+        }
+    }
+}
