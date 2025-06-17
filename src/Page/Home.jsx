@@ -56,9 +56,9 @@ function Home() {
             <Header />
             {/* Header Ends Here */}
 
-                        {/* AI That Section */}
-                        <Container fluid className='ai-that-section'>
-            <Container>
+            {/* AI That Section */}
+            <Container fluid className='ai-that-section'>
+                <Container>
                     <Row>
                         <Col xl="12" lg="12" md="12" sm="12" className='text-center scroll-anime top'>
                             <h2 className='ai-that-title'>AI THAT</h2>

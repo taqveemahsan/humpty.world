@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Heroimg from "../Images/Bg/Hero.png";
+import Heroimg from "../Images/Bg/Hero_2.png";
 function Header() {
     const [animate, setAnimate] = useState(false);
 
