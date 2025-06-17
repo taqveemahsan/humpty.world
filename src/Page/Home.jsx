@@ -14,9 +14,34 @@ import { FriendshipMarquee, TextMarquee } from '../Components/Marquee';
 import CardSlider from '../Components/CardSlider';
 import JoinFriendList from '../Components/JoinFriendList';
 import VideoSection from '../Components/VideoSection.tsx';
+import ocImg1 from "../Images/OurCreations/Image 01.jpg";
+import ocImg2 from "../Images/OurCreations/Image 02.jpg";
+import ocImg3 from "../Images/OurCreations/Image 03.jpg";
+import ocImg4 from "../Images/OurCreations/Image 04.jpg";
+import ocImg5 from "../Images/OurCreations/Image 05.jpg";
+import ocImg6 from "../Images/OurCreations/Image 06.jpg";
+import ocImg7 from "../Images/OurCreations/Image 07.jpg";
+import ocImg8 from "../Images/OurCreations/Image 08.jpg";
+import ocImg9 from "../Images/OurCreations/Image 09.jpg";
+import ocImg10 from "../Images/OurCreations/Image 10.jpg";
+import ocImg11 from "../Images/OurCreations/Img 11.jpeg";
+import ocImg12 from "../Images/OurCreations/Image 12.jpg";
+import ocGif1 from "../Images/OurCreations/Gif 01.gif";
+import ocGif2 from "../Images/OurCreations/Gif 02.gif";
+import ocGif3 from "../Images/OurCreations/Gif 03.gif";
+import ocGif4 from "../Images/OurCreations/Gif 04.gif";
+import ocGif5 from "../Images/OurCreations/Gif 05.gif";
+import ocGif6 from "../Images/OurCreations/Gif 06.gif";
+import ocGif7 from "../Images/OurCreations/gif 07.gif";
+import ocGif8 from "../Images/OurCreations/Gif 08.gif";
+import ocGif9 from "../Images/OurCreations/Gif 09.gif";
+import ocGif10 from "../Images/OurCreations/Gif 10.gif";
+import ocGif11 from "../Images/OurCreations/Gif 11.gif";
+import ocGif12 from "../Images/OurCreations/Gif 12.gif";
 // import { ReadyTalkPost } from '../Components/ReadyTalkPost';
 function Home() {
     const [animatedElements, setAnimatedElements] = useState([]);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     // Function to check if an element is in the viewport
     function isElementInViewport(elem) {
@@ -41,6 +66,21 @@ function Home() {
 
         setAnimatedElements(elementsInViewport);
     }
+
+    const creations = [
+        { img: ocImg1, gif: ocGif1, large: true },
+        { img: ocImg2, gif: ocGif2 },
+        { img: ocImg3, gif: ocGif3 },
+        { img: ocImg4, gif: ocGif4 },
+        { img: ocImg5, gif: ocGif5 },
+        { img: ocImg6, gif: ocGif6 },
+        { img: ocImg7, gif: ocGif7 },
+        { img: ocImg8, gif: ocGif8 },
+        { img: ocImg9, gif: ocGif9 },
+        { img: ocImg10, gif: ocGif10 },
+        { img: ocImg11, gif: ocGif11 },
+        { img: ocImg12, gif: ocGif12 }
+    ];
 
     useEffect(() => {
         // Initial check on page load
@@ -91,42 +131,16 @@ function Home() {
                         <Col xl="12" lg="12" md="12" sm="12" className='scroll-anime top'>
                             <h4 className='section-title'>Our Creations</h4>
                             <div className='creations-grid'>
-                                <div className='creation-item large'>
-                                    <img src="https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1" alt="Humpty Adventure" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/4792728/pexels-photo-4792728.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty Character" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/5428829/pexels-photo-5428829.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty World" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/4792729/pexels-photo-4792729.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty Friends" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/5428835/pexels-photo-5428835.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty Story" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/4792730/pexels-photo-4792730.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty Magic" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/5428834/pexels-photo-5428834.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty Universe" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/4792731/pexels-photo-4792731.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty Dreams" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/5428833/pexels-photo-5428833.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty Joy" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/4792732/pexels-photo-4792732.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty Fun" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/5428832/pexels-photo-5428832.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty Play" />
-                                </div>
-                                <div className='creation-item'>
-                                    <img src="https://images.pexels.com/photos/4792733/pexels-photo-4792733.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="Humpty Learn" />
-                                </div>
+                                {creations.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className={`creation-item ${item.large ? 'large' : ''}`}
+                                        onMouseEnter={() => setHoveredIndex(index)}
+                                        onMouseLeave={() => setHoveredIndex(null)}
+                                    >
+                                        <img src={hoveredIndex === index ? item.gif : item.img} alt={`Creation ${index + 1}`} loading='lazy' />
+                                    </div>
+                                ))}
                             </div>
                         </Col>
                     </Row>
