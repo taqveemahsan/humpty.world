@@ -30,12 +30,12 @@ function JoinFriendList() {
     return (
         <>
             <ul className="Join-list">
-               <span><Link target="_blank" to="https://www.instagram.com/humptyai_official/"><Image src={insta} alt="Social Icon" /></Link></span>
+               <span><Link target="_blank" to="https://www.instagram.com/humpty.world/"><Image src={insta} alt="Social Icon" /></Link></span>
                 <span><Link target="_blank" to="https://x.com/HumptyAi"><Image src={iconx} alt="Social Icon" /></Link></span>
                 <span><Link target="_blank" to="https://linktr.ee/humptyai"><Image src={linktree} alt="Social Icon" /></Link></span>
                 <span><Link target="_blank" to="https://t.me/humptyai"><Image src={icontelegram} alt="Social Icon" /></Link></span>
                 <span><Link target="_blank" to="https://www.facebook.com/people/Humpty-AI/pfbid0fQbAYL3maqJ7vrXEanMSBxjL9oodxgtZFeKqHtRdggE4mzSMJ6poyvhAS11NVeAkl"><Image src={facebook} alt="Social Icon" /></Link></span>
-                <span><Link target="_blank" to="https://www.tiktok.com/@humpty_ai"><Image src={tiktok} alt="Social Icon" /></Link></span>
+                <span><Link target="_blank" to="https://www.tiktok.com/@humpty.world"><Image src={tiktok} alt="Social Icon" /></Link></span>
                 <span><Link target="_blank" to="https://www.youtube.com/@HumptyAI"><Image src={youtube} alt="Social Icon" /></Link></span>
 
                 
