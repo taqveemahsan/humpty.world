@@ -400,6 +400,14 @@
             @media(max-width:1200px){right: calc(50% - 220px);}
             @media(max-width:767px){right: calc(50% - 140px);}
         }
+        &:nth-of-type(6){right: calc(50% - 390px);
+            @media(max-width:1200px){right: calc(50% - 300px);}
+            @media(max-width:767px){right: calc(50% - 200px);}
+        }
+        &:nth-of-type(7){left: calc(50% - 390px);
+            @media(max-width:1200px){left: calc(50% - 300px);}
+            @media(max-width:767px){left: calc(50% - 200px);}
+        }
         img{max-width: 60%;max-height: 60%;@include trans1;}
         &:hover{background-color: $color;
             img{transform: scale(1.1);}
