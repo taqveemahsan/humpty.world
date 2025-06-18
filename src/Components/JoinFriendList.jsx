@@ -11,6 +11,8 @@ import iconx from "../Images/Icons/iconX.svg";
 import linktree from "../Images/Posts/Linktree.png";
 import insta from "../Images/Posts/insta.svg";
 import facebook from "../Images/Posts/facebook.svg";
+import tiktok from "../Images/Icons/icon-tiktok.svg";
+import youtube from "../Images/Icons/icon-youtube.svg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -33,6 +35,8 @@ function JoinFriendList() {
                 <span><Link target="_blank" to="https://linktr.ee/humptyai"><Image src={linktree} alt="Social Icon" /></Link></span>
                 <span><Link target="_blank" to="https://t.me/humptyai"><Image src={icontelegram} alt="Social Icon" /></Link></span>
                 <span><Link target="_blank" to="https://www.facebook.com/people/Humpty-AI/pfbid0fQbAYL3maqJ7vrXEanMSBxjL9oodxgtZFeKqHtRdggE4mzSMJ6poyvhAS11NVeAkl"><Image src={facebook} alt="Social Icon" /></Link></span>
+                <span><Link target="_blank" to="https://www.tiktok.com/@humpty_ai"><Image src={tiktok} alt="Social Icon" /></Link></span>
+                <span><Link target="_blank" to="https://www.youtube.com/@HumptyAI"><Image src={youtube} alt="Social Icon" /></Link></span>
 
                 
                 <li className={activeIndex === 0 ? "active" : ""}>
